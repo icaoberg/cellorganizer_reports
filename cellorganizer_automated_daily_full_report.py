@@ -177,7 +177,7 @@ data = []
 for author in list_of_issues_per_user:
 	datum = [ author ]
 	datum.extend( list_of_issues_per_user[ author ] )
-	datum.extend( ['<a href='https://bitbucket.org/icaoberg/cellorganizer/issues?responsible=' + author + ''>Click Here</a>'])
+	datum.extend( ['<a href=\"https://bitbucket.org/icaoberg/cellorganizer/issues?responsible=' + author + '\">Click Here</a>'])
 	data.append( datum )
 
 message = tabulate( data, headers, tablefmt=tabulate_output_format )
