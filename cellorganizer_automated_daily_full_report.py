@@ -52,7 +52,7 @@ if tabulate_output_format == 'html':
 	output_fileID.write( message )
 
 ################################################################################
-message = '<h1><a name='jenkins'>CellOrganizer CI Daily Report</a></h1>'
+message = '<h1><a name="jenkins">CellOrganizer CI Daily Report</a></h1>'
 if tabulate_output_format == 'html':
 	output_fileID.write( message )
 
@@ -94,7 +94,7 @@ else:
 	print message
 
 ################################################################################
-message = '<h1><a name='repository'>CellOrganizer Repository Daily Report</a></h1>'
+message = '<h1><a name="repository">CellOrganizer Repository Daily Report</a></h1>'
 if tabulate_output_format == 'html':
 	output_fileID.write( message )
 
@@ -319,7 +319,7 @@ else:
 	print message
 
 ################################################################################
-message = '<h1><a name='python'>CellOrganizer for Python Daily Report</a></h1>'
+message = '<h1><a name="python">CellOrganizer for Python Daily Report</a></h1>'
 if tabulate_output_format == 'html':
 	output_fileID.write( message )
 
@@ -549,7 +549,7 @@ else:
 	print message
 
 ################################################################################
-message = '<h1><a name='documentation'>CellOrganizer Documentation Daily Report</a></h1>'
+message = '<h1><a name="documentation">CellOrganizer Documentation Daily Report</a></h1>'
 if tabulate_output_format == 'html':
 	output_fileID.write( message )
 
