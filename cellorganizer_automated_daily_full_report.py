@@ -305,7 +305,7 @@ for issue in list_of_issues:
 			if not version:
 				version = 'Unassigned'
 
-			url = '<a href='https://bitbucket.org/icaoberg/cellorganizer/issue/' + str(issue['local_id']) + ''>Click Here</a>'
+			url = '<a href=\"https://bitbucket.org/icaoberg/cellorganizer/issue/' + str(issue['local_id']) + '\">Click Here</a>'
 
 			datum = [issue['local_id'], version, title, responsible, url]
 			data.append( datum  )
