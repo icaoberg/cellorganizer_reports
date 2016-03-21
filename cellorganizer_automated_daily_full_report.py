@@ -73,7 +73,7 @@ for job in list_of_jobs:
 	try:
 		if job['name'].startswith('cellorganizer') and job['name'].endswith('glnx64') and job['name'].find( 'issue' ) == -1 and job['name'].find( 'percellparam2') == -1 and job['name'].find('downsampling') == -1 and job['name'].find('gource') == -1 and job['name'].find('python') == -1:
 			name = job['name']
-			status = '<img src="http://developers.compbio.cs.cmu.edu:8080/static/a5ab88c2/images/32x32/"" + job['color'] + ".png"/>'
+			status = '<img src=\"http://developers.compbio.cs.cmu.edu:8080/static/a5ab88c2/images/32x32/\"' + job['color'] + '.png\"/>'
 			url = '<a href='' + job['lastBuild']['url'] + ''>Last Build</a>'
 			if job['buildable'] == True:
 				buildable = 'True'
