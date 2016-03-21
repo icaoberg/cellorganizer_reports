@@ -407,7 +407,7 @@ data = []
 for author in list_of_issues_per_user:
 	datum = [ author ]
 	datum.extend( list_of_issues_per_user[ author ] )
-	datum.extend( ['<a href='https://bitbucket.org/icaoberg/cellorganizer/issues?responsible=' + author + ''>Click Here</a>'])
+	datum.extend( ['<a href=\"https://bitbucket.org/icaoberg/cellorganizer/issues?responsible=' + author + '\">Click Here</a>'])
 	data.append( datum )
 
 message = tabulate( data, headers, tablefmt=tabulate_output_format )
@@ -471,7 +471,7 @@ else:
 
 message = 'https://bitbucket.org/icaoberg/cellorganizer/issues?status=new&status=open'
 if tabulate_output_format == 'html':
-	output_fileID.write( 'To see all open tickets: <a href='' + message + ''>Click here</a>'  )
+	output_fileID.write( 'To see all open tickets: <a href=\"' + message + '\">Click here</a>'  )
 else:
 	print 'To see all open tickets: ' + message
 
@@ -535,7 +535,7 @@ for issue in list_of_issues:
 			if not version:
 				version = 'Unassigned'
 
-			url = '<a href='https://bitbucket.org/icaoberg/cellorganizer/issue/' + str(issue['local_id']) + ''>Click Here</a>'
+			url = '<a href=\"https://bitbucket.org/icaoberg/cellorganizer/issue/' + str(issue['local_id']) + '\">Click Here</a>'
 
 			datum = [issue['local_id'], version, title, responsible, url]
 			data.append( datum  )
@@ -637,7 +637,7 @@ data = []
 for author in list_of_issues_per_user:
 	datum = [ author ]
 	datum.extend( list_of_issues_per_user[ author ] )
-	datum.extend( ['<a href='https://bitbucket.org/icaoberg/cellorganizer/issues?responsible=' + author + ''>Click Here</a>'])
+	datum.extend( ['<a href=\"https://bitbucket.org/icaoberg/cellorganizer/issues?responsible=' + author + '\">Click Here</a>'])
 	data.append( datum )
 
 message = tabulate( data, headers, tablefmt=tabulate_output_format )
@@ -656,7 +656,7 @@ else:
 
 message = 'https://bitbucket.org/icaoberg/cellorganizer/issues?kind=task&kind=bug&status=open&status=new'
 if tabulate_output_format == 'html':
-	output_fileID.write( 'To see all open tickets: <a href='' + message + ''>Click here</a>'  )
+	output_fileID.write( 'To see all open tickets: <a href=\"' + message + '\">Click here</a>'  )
 else:
 	print 'To see all open tickets: ' + message
 
@@ -701,7 +701,7 @@ else:
 
 message = 'https://bitbucket.org/icaoberg/cellorganizer/issues?status=new&status=open'
 if tabulate_output_format == 'html':
-	output_fileID.write( 'To see all open tickets: <a href='' + message + ''>Click here</a>'  )
+	output_fileID.write( 'To see all open tickets: <a href=\"' + message + '\">Click here</a>'  )
 else:
 	print 'To see all open tickets: ' + message
 
@@ -765,7 +765,7 @@ for issue in list_of_issues:
 			if not version:
 				version = 'Unassigned'
 
-			url = '<a href='https://bitbucket.org/icaoberg/cellorganizer/issue/' + str(issue['local_id']) + ''>Click Here</a>'
+			url = '<a href=\"https://bitbucket.org/icaoberg/cellorganizer/issue/' + str(issue['local_id']) + '\">Click Here</a>'
 
 			datum = [issue['local_id'], version, title, responsible, url]
 			data.append( datum  )
